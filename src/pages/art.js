@@ -6,6 +6,9 @@ const Art = () => {
     <div>
       artsyyy
     </div>
+    <div className="font-science text-2xl text-blue-600">
+  Custom Science Font Test
+</div>
     </Layout>
   );
 };
