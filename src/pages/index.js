@@ -8,7 +8,7 @@ export default function Home() {
         <title>Darine Tag</title>
         <meta name="description" content="My creative portfolio" />
       </Head>
-      <section>
+      <section className="relative h-screen">
         
 <img src="/creativeme.png" alt="My Image" className="w-150 h-140 rounded-lg absolute top-10 right-10 z-10" />
         <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] absolute top-30 left-8">Darine Tag</h1>
@@ -20,6 +20,52 @@ export default function Home() {
    <p style={{ fontFamily: 'cormorant' }} className="p-6 text-xl w-230">As someone who is very much passionate about learning, I have managed over the years to gather a good amount of skillsets that not only allowed me to be versatile and a quick problem solver but moreover it helped me become extremely adaptable to new things and a good communicator with people from different backgrounds. I bring creativity and appeal to digital solutions. </p>
 </div>
       </section>
+            <section>
+              <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] flex items-center justify-center ">Skills</h1> </section>
+  <section className="p-4 bg-black ">
+  <div className="grid grid-cols-12 gap-2 ">
+    {/* First row */}
+    <div className="col-span-3 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">Web Design</div>
+    <div className="col-span-6 bg-black text-white p-2 hover:bg-white hover:text-black transition duration-300 ease-in-out">HTML CSS Javascript GitHub Git</div>
+    <div className="col-span-3 bg-yellow-400 text-black p-2 hover:bg-white transition duration-300 ease-in-out">Next.js</div>
+
+    {/* Second row */}
+    <div className="col-span-1 bg-red-700 p-2 hover:bg-white transition duration-300 ease-in-out"></div>
+    <div className="col-span-2 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">Visual Design</div>
+    <div className="col-span-3 bg-blue-900 text-white p-2 hover:bg-white hover:text-black transition duration-300 ease-in-out">Figma</div>
+    <div className="col-span-3 bg-red-700 text-white p-2 hover:bg-white hover:text-black transition duration-300 ease-in-out">Translation</div>
+    <div className="col-span-3 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">WordPress</div>
+
+    {/* Third row */}
+    <div className="col-span-2"></div>
+    <div className="col-span-2 bg-yellow-400 text-black p-2 hover:bg-white transition duration-300 ease-in-out">UX Writing</div>
+    <div className="col-span-3 bg-red-700 text-white p-2 hover:bg-white hover:text-black transition duration-300 ease-in-out">Proofreading</div>
+    <div className="col-span-3 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">Framer</div>
+
+    {/* Fourth row */}
+    <div className="col-span-2 bg-blue-900 text-white p-2 hover:bg-white hover:text-black transition duration-300 ease-in-out">Typography</div>
+    <div className="col-span-2 bg-red-700 text-white p-2 hover:bg-white hover:text-black transition duration-300 ease-in-out">Color Theory</div>
+    <div className="col-span-2 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">Layout</div>
+    <div className="col-span-1 bg-blue-900 p-2 hover:bg-white transition duration-300 ease-in-out"></div>
+    <div className="col-span-3 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">User Research</div>
+    <div className="col-span-2 bg-white p-2 hover:bg-white transition duration-300 ease-in-out"> 
+      <img src="/figma-icon.svg" alt="Figma" className="w-6 h-6 mx-auto" />
+    </div>
+
+    {/* Fifth row */}
+    <div className="col-span-3 bg-yellow-400 text-black p-2 hover:bg-white transition duration-300 ease-in-out">UI/UX Principles</div>
+    <div className="col-span-1 bg-yellow-400 p-2 hover:bg-white transition duration-300 ease-in-out">
+      <img src="/git-icon.svg" alt="Git" className="w-6 h-6 mx-auto" />
+    </div>
+    <div className="col-span-2 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">AI</div>
+    <div className="col-span-1 bg-red-700 p-2 hover:bg-white transition duration-300 ease-in-out">
+      <img src="/github-icon.svg" alt="GitHub" className="w-6 h-6 mx-auto" />
+    </div>
+    <div className="col-span-5 bg-white text-black p-2 hover:bg-white transition duration-300 ease-in-out">Mockups and Prototyping</div>
+  </div>
+</section>
+
+
     </Layout>
   );
 }
