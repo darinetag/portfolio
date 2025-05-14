@@ -26,6 +26,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype'); /* or .otf */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond';
+  src: url('/fonts/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 /* Apply the background and text color */
 body {
