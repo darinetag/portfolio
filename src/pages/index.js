@@ -11,13 +11,13 @@ export default function Home() {
       <section className="relative h-screen">
         
 <img src="/moi.gif" alt="My Image" className="w-150 h-140 rounded-lg absolute top-10 right-10 z-10" />
-        <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] absolute top-30 left-8">Darine Tag</h1>
+        <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] absolute top-55 left-8">Darine Tag</h1>
        
 <div className="w-76 h-76 bg-[#BC0700] border-10 border-black absolute top-0 right-0 hover:bg-white transition duration-300 ease-in-out"></div>
 <div className="w-24 h-52 bg-[#0E2A8B] border-10 border-black absolute top-74 right-0 hover:bg-white transition duration-300 ease-in-out"></div>
-<div style={{ fontFamily: 'neue' }} className="w-256 h-86 bg-[#FBC408] border-10 border-black absolute top-64 left-0 hover:bg-white transition duration-300 ease-in-out"> 
-   <h1  className="p-6 text-2xl">Making Tech Kind</h1>
-   <p  className="p-5 text-xl  w-230">As someone who is very much passionate about learning, I have managed to gather a good amount of skillsets that not only allowed me to be versatile and a quick problem solver but moreover it helped me become extremely adaptable to new things and a good communicator with people from different backgrounds. I bring creativity and appeal to digital solutions. </p>
+<div style={{ fontFamily: 'neue' }} className="w-256 h-65 bg-[#FBC408] border-10 border-black absolute top-85 left-0 hover:bg-white transition duration-300 ease-in-out"> 
+   <h1  className="pl-6 pt-7 text-2xl">Making Tech Kind</h1>
+   <p  className="pl-5 p-4 text-xl w-230">As someone who is very much passionate about learning, I have managed to gather a good amount of skillsets that not only allowed me to be versatile and a quick problem solver but moreover it helped me become extremely adaptable to new things and a good communicator with people from different backgrounds. I bring creativity and appeal to digital solutions. </p>
 </div>
       </section>
             <section>
