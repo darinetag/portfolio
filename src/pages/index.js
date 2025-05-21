@@ -10,20 +10,20 @@ export default function Home() {
       </Head>
       <section className="relative h-screen">
         
-<img src="/creativeme.png" alt="My Image" className="w-150 h-140 rounded-lg absolute top-10 right-10 z-10" />
+<img src="/moi.gif" alt="My Image" className="w-150 h-140 rounded-lg absolute top-10 right-10 z-10" />
         <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] absolute top-30 left-8">Darine Tag</h1>
        
-<div className="w-76 h-76 bg-[#BC0700] border-10 border-black absolute top-0 right-0"></div>
-<div className="w-24 h-52 bg-[#0E2A8B] border-10 border-black absolute top-74 right-0"></div>
-<div className="w-256 h-86 bg-[#FBC408] border-10 border-black absolute top-64 left-0"> 
-   <h1 style={{ fontFamily: 'cormorant' }} className="p-6 text-2xl">Making Tech Kind</h1>
-   <p style={{ fontFamily: 'cormorant' }} className="p-5 text-2xl  w-230">As someone who is very much passionate about learning, I have managed over the years to gather a good amount of skillsets that not only allowed me to be versatile and a quick problem solver but moreover it helped me become extremely adaptable to new things and a good communicator with people from different backgrounds. I bring creativity and appeal to digital solutions. </p>
+<div className="w-76 h-76 bg-[#BC0700] border-10 border-black absolute top-0 right-0 hover:bg-white transition duration-300 ease-in-out"></div>
+<div className="w-24 h-52 bg-[#0E2A8B] border-10 border-black absolute top-74 right-0 hover:bg-white transition duration-300 ease-in-out"></div>
+<div style={{ fontFamily: 'neue' }} className="w-256 h-86 bg-[#FBC408] border-10 border-black absolute top-64 left-0 hover:bg-white transition duration-300 ease-in-out"> 
+   <h1  className="p-6 text-2xl">Making Tech Kind</h1>
+   <p  className="p-5 text-xl  w-230">As someone who is very much passionate about learning, I have managed to gather a good amount of skillsets that not only allowed me to be versatile and a quick problem solver but moreover it helped me become extremely adaptable to new things and a good communicator with people from different backgrounds. I bring creativity and appeal to digital solutions. </p>
 </div>
       </section>
             <section>
               <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] flex items-center justify-center ">Skills</h1> </section>
   <section className="p-2 bg-black mt-20 ">
-  <div className="grid grid-cols-12 gap-2  text-2xl text-center " style={{ fontFamily: 'cormorant' }}>
+  <div className="grid grid-cols-12 gap-2  text-xl text-center " style={{ fontFamily: 'neue' }}>
     {/* First row */}
 <div className="col-span-3 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Web Design</div>
     <div className="col-span-6 h-14 bg-black text-white p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">HTML CSS Javascript GitHub Git</div>

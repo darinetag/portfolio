@@ -28,14 +28,14 @@
 }
 @font-face {
   font-family: 'CormorantGaramond';
-  src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype'); /* or .otf */
+  src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype'); 
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'CormorantGaramond';
-  src: url('/fonts/CormorantGaramond-Bold.ttf') format('truetype');
+  font-family: 'Neue';
+  src: url('/fonts/Neue.otf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }

@@ -5,6 +5,7 @@ module.exports = {
       fontFamily: {
         science: ['science', 'sans-serif'],
          cormorant: ['CormorantGaramond', 'serif'],
+         neue: ['Neue', 'serif'],
       },
     },
   },
