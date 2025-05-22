@@ -40,6 +40,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montreal';
+  src: url('/fonts/Montreal.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Apply the background and text color */
 body {
   background: var(--background);
