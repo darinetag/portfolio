@@ -65,12 +65,7 @@ export default function Home() {
     <div className="col-span-5 h-20 bg-blue-900 text-white p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">Mockups and Prototyping</div>
   </div>
 </section>
-<section>
-                <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] flex items-center justify-center mt-20 ">Projects</h1>
 
-
-
-</section>
 
     </Layout>
   );
