@@ -66,22 +66,23 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
           />
 
           {/* Foreground Image */}
-          <div className="relative z-10 flex ml-30 mt-30">
+          <div className="relative z-10 flex ml-30 mt-30 ">
   <img
     src={current.image}
     alt="Example visual"
-    className={`object-contain rounded-xl ${
-      current.id === "google" ? "w-[400px] h-[400px]  " : "w-[500px] h-[500px]"
+    className={`object-contain rounded-xl  ${
+      current.id === "google" ? "w-[370px] h-[400px]  " : "w-[420px] h-[520px] mt-30"
     }`}
   />
 </div>
 
-<div className="relative z-10 flex mr-40 mt-30">
+<div className="relative z-10 flex mr-20  mt-30 ">
+  
   <img
     src={current.images}
     alt="Example visual"
     className={`object-contain rounded-xl ${
-      current.id === "google" ? "w-[400px] h-[300px]  " : "w-[400px] h-[400px]"
+      current.id === "google" ? "w-[320px] h-[400px] ml-14 mb-40 " : "w-[400px] h-[400px] mt-2"
     }`}
   />
 </div>

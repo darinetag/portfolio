@@ -13,7 +13,7 @@ const examples = [
     images: "/uxwriting/google2.png"
   },
   {
-    id: "summarization",
+    id: "google",
     image: "/uxwriting/summarizationbefore.png",
     images: "/uxwriting/summarization2.png"
   },
