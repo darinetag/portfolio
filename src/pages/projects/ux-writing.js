@@ -1,14 +1,37 @@
-import Layout from "@/components/Layout";
+import UxWriting from "@/components/UxWriting";
 
-export default function UxProjectPage() {
+export default function UxProject() {
+const examples = [
+  {
+    id: "email", 
+    image: "/uxwriting/email.png",
+    images: "/uxwriting/email2.png"
+  },
+  {
+    id: "google",
+    image: "/uxwriting/google.png",
+    images: "/uxwriting/google2.png"
+  },
+  {
+    id: "summarization",
+    image: "/uxwriting/summarizationbefore.png",
+    images: "/uxwriting/summarization2.png"
+  },
+  {
+    id: "texttospeech",
+    image: "/uxwriting/texttospeech.png",
+    images: "/uxwriting/texttospeech2.png"
+  }
+];
+
+
   return (
-    <Layout>
-      <div className="min-h-screen flex flex-col items-center justify-center text-center px-6">
-        <h1 className="text-5xl font-bold text-[#BC0700] mb-4">ux writing</h1>
-        <p className="text-gray-700 max-w-xl">
-          Here's a collection of websites I've designed, developed, or reimagined with a focus on delightful user experience and strong branding.
-        </p>
-      </div>
-    </Layout>
+    <UxWriting
+      title="UX Writing"
+      subtitle="Before"
+      subtitles="After"
+      description="UX writing is the art of using clear, concise language in digital products to guide users effortlessly. It reduces cognitive load, removes friction, and helps people focus on exactly what they came to do — nothing more, nothing less."
+      examples={examples}
+    />
   );
 }
