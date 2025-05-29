@@ -71,7 +71,7 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
     src={current.image}
     alt="Example visual"
     className={`object-contain rounded-xl  ${
-      current.id === "google" ? "w-[370px] h-[400px]  " : "w-[420px] h-[520px] mt-30"
+      current.id === "google" ? "w-[370px] h-[400px]  " : "w-[420px] h-[460px] mt-14"
     }`}
   />
 </div>
