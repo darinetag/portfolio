@@ -4,22 +4,32 @@ const examples = [
   {
     id: "landingpage",
     image: "/website/landingpagebm1.png", // Make sure this path matches your public folder structure
+    images: "/website/stickyone.png",
+    imagess: "/website/landingpages.png"
   },
   {
     id: "navbar",
     image: "/website/navbarbm2.png",
+    images: "/website/sticky2.png",
+     imagess: "/website/navbars.png"
   },
  {
     id: "about us",
     image: "/website/aboutusbm2.png",
+     images: "/website/sticky3.png",
+     imagess: "/website/aboutuss.png"
   },
  {
     id: "careers",
     image: "/website/careers22.png",
+     images: "/website/sticky4.png",
+     imagess: "/website/careerss.png"
   },
  {
     id: "blogs",
     image: "/website/blogs22.png",
+     images: "/website/sticky5.png",
+     imagess: "/website/blogss.png"
   },
  
 ];

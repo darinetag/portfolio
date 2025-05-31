@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import { ChevronRight, ChevronLeft } from "lucide-react"; 
 
-export default function ProjectExample({ title, subtitle, examples, subtitles, description }) {
+export default function ProjectExample({ title, subtitle, examples, subtitles, description, images, imagess }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const current = examples[currentIndex];
 
@@ -20,10 +20,24 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
         <h1 className="text-6xl text-[#FBC408] text-center my-4" style={{ fontFamily: "Science" }}>
           {title}
         </h1>
+        
      <p className="flex items-center justify-center text-center w-full md:w-[800px] mx-auto ">
   {description}
 </p>
-<div className="relative w-full h-[1px] mt-110 flex items-center justify-center flex-grow pb-100">
+<div className="flex">
+<img
+    src={current.images}
+    alt="sticky note"
+    className=" w-[250px] h-[220px] items-start ml-20"
+  />  
+  <img
+    src={current.imagess}
+    alt="sticky note"
+    className=" w-[150px] h-[140px] items-end ml-200 mt-20"
+  />  
+  </div>
+<div className="relative w-full h-[1px] mt-70 flex items-center justify-center flex-grow pb-100">
+    
           {/* Left Arrow */}
           <button
             onClick={prev}
@@ -31,13 +45,15 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
           >
             <ChevronLeft size={48} />
           </button>
-
-          {/* Foreground Image */}
+    
           <div className="flex items-center justify-center ">
+      
   <img
     src={current.image}
     alt="Example visual"
-    className=" w-[550px] h-[800px] "
+    className={`object-contain   ${
+      current.id === "about us" ? " w-[800px] h-[1600px] mt-180 " : " w-[880px] h-[800px]"
+    }`}
   />
 </div>
 {/* Right Arrow */}
@@ -45,7 +61,7 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
             onClick={next}
             className="absolute right-4 md:right-10 z-20  text-[#FBC408] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
           >
-            <ChevronRight size={48} />
+            <ChevronRight size={48}/>
           </button>
         </div>
       </div>
