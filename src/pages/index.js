@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <section className="relative h-screen">
         
-<img src="/moi.gif" alt="My Image" className="w-150 h-140 rounded-lg absolute top-10 right-10 z-10" />
+<img src="/darinemotion.gif" alt="My Image" className="w-150 h-140 rounded-lg absolute top-10 right-10 z-10" />
         <h1 style={{ fontFamily: 'Science' }} className="font-science text-8xl text-[#0E2A8B] absolute top-55 left-8">Darine Tag</h1>
        
 <div className="w-76 h-76 bg-[#BC0700] border-10 border-black absolute top-0 right-0 hover:bg-white transition duration-300 ease-in-out"></div>
