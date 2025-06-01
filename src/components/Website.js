@@ -25,17 +25,34 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
   {description}
 </p>
 <div className="flex">
-<img
-    src={current.images}
-    alt="sticky note"
-    className=" w-[250px] h-[220px] items-start ml-20"
-  />  
+  {current.id === "blogs" ? (
+    <a
+      href="https://big-mama.io/en/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="ml-20"
+    >
+      <img
+        src={current.images}
+        alt="sticky note"
+        className="w-[250px] h-[220px] cursor-pointer"
+      />
+    </a>
+  ) : (
+    <img
+      src={current.images}
+      alt="sticky note"
+      className="w-[250px] h-[220px] ml-20"
+    />
+  )}
+  
   <img
     src={current.imagess}
     alt="sticky note"
-    className=" w-[150px] h-[140px] items-end ml-200 mt-20"
-  />  
-  </div>
+    className="w-[150px] h-[140px] items-end ml-200 mt-20"
+  />
+</div>
+
 <div className="relative w-full h-[1px] mt-70 flex items-center justify-center flex-grow pb-100">
     
           {/* Left Arrow */}

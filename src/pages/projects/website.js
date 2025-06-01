@@ -3,7 +3,7 @@ import Website from "@/components/Website";
 const examples = [
   {
     id: "landingpage",
-    image: "/website/landingpagebm1.png", // Make sure this path matches your public folder structure
+    image: "/website/landingpagebm1.png", 
     images: "/website/stickyone.png",
     imagess: "/website/landingpages.png"
   },
