@@ -11,7 +11,8 @@ const projects = [
 ];
 
 const ProjectsPage = () => {
-  const [offset, setOffset] = useState(0);
+  const [offset, setOffset] = useState(-80);
+  
 
   useEffect(() => {
     let start = performance.now();
