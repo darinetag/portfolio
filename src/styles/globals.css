@@ -25,12 +25,7 @@
   src: url('/fonts/SciencePersonalUseOnly-JpG37.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
-@font-face {
-  font-family: 'CormorantGaramond';
-  src: url('/fonts/CormorantGaramond-Regular.ttf') format('truetype'); 
-  font-weight: normal;
-  font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -38,6 +33,7 @@
   src: url('/fonts/Neue.otf') format('truetype');
   font-weight: bold;
   font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -45,6 +41,7 @@
   src: url('/fonts/Montreal.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
+   font-display: swap;
 }
 
 /* Apply the background and text color */
