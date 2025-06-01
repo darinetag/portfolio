@@ -6,7 +6,7 @@ export default function ProjectExample() {
  const examples = [
   { id: "about us", type: "video", src: "/projects/elysian.mp4" },
   { id: "services", type: "image", src: "/projects/ai.jpg" },
-  { id: "chatapp", type: "image", src: "/projects/chatpp.jpg" }
+  { id: "chatapp", type: "image", src: "/projects/chatpp.webp" }
 ];
 
 
