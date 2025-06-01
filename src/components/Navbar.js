@@ -17,9 +17,9 @@ const Navbar = () => {
     >
       {/* Left: Navigation links */}
       <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none', fontSize: '1.2rem', margin: 0, padding: 0 }}>
-        <li><Link href="/">home</Link></li>
-        <li><Link href="/projects">projects</Link></li>
-        <li><Link href="/art">art</Link></li>
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/projects">Projects</Link></li>
+        <li><Link href="/art">Art</Link></li>
       </ul>
 
       {/* Right: Social Icons */}
