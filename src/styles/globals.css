@@ -29,14 +29,6 @@
 }
 
 @font-face {
-  font-family: 'Neue';
-  src: url('/fonts/Neue.otf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
   font-family: 'Montreal';
   src: url('/fonts/Montreal.otf') format('truetype');
   font-weight: normal;
@@ -44,7 +36,7 @@
    font-display: swap;
 }
 
-/* Apply the background and text color */
+
 body {
   background: var(--background);
   color: var(--foreground);

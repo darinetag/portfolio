@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         science: ['science', 'sans-serif'],
-         neue: ['Neue', 'serif'],
+         montreal: ['montreal', 'serif'],
       },
     },
   },
