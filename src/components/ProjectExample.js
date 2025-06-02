@@ -1,7 +1,9 @@
 // components/ProjectExample.js
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { ChevronRight, ChevronLeft } from "lucide-react"; 
+import { ChevronRight, ChevronLeft } from "lucide-react";
+import Image from 'next/image';
+
 
 export default function ProjectExample({ title, subtitle, examples }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,15 +50,18 @@ export default function ProjectExample({ title, subtitle, examples }) {
           </button>
 
           {/* Background GIF */}
-          <img
+          <Image
             src="/mondrian.gif"
             alt="Background gif"
             className="absolute top-48 left-0 w-full h-[228px] object-cover z-0 opacity-20 "
+            width={400}
+  height={300}
           />
 
           {/* Foreground Image */}
           <div className="relative z-10 flex justify-center items-center h-full mt-30 ">
-            <img src={current.image} alt="Example visual" className="w-[784px]  object-contain rounded-xl " />
+            <Image src={current.image} alt="Example visual" className="w-[784px]  object-contain rounded-xl "  width={400}
+  height={300} unoptimized />
           </div>
 
           {/* Right Arrow */}
