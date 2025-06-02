@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { ChevronRight, ChevronLeft } from "lucide-react";
+import Image from 'next/image';
 
 export default function ProjectExample() {
  const examples = [
@@ -59,10 +60,12 @@ export default function ProjectExample() {
     className="w-[900px] h-[2000px] max-h-[160vh] w-auto rounded-2xl object-contain"
   />
 ) : (
-  <img
+  <Image
     src={current.src}
     alt={current.id}
     className="w-[900px] h-[2000px] max-h-[160vh] w-auto rounded-2xl object-contain"
+     width={400}
+  height={300}
   />
 )}
 </div>

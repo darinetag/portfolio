@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { ChevronRight, ChevronLeft } from "lucide-react"; 
-// import Image from 'next/image'
+
+
 
 export default function ProjectExample({ title, subtitle, examples, subtitles, description, images, imagess }) {
   const [currentIndex, setCurrentIndex] = useState(0);
