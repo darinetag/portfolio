@@ -17,29 +17,29 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
 
   return (
     <Layout>
-      <div className="min-h-screen px-6 relative overflow-hidden" style={{ fontFamily: "Montreal" }}>
+      <div className="lg:min-h-screen min-h-[70vh] px-6 relative overflow-hidden" style={{ fontFamily: "Montreal" }}>
         {/* Page Title */}
-        <h1 className="text-6xl text-[#FBC408] text-center my-4" style={{ fontFamily: "Science" }}>
+        <h1 className="lg:text-6xl text-2xl text-[#FBC408] text-center my-4" style={{ fontFamily: "Science" }}>
           {title}
         </h1>
-     <p className="flex items-center justify-center text-center w-full md:w-[800px] mx-auto ">
+     <p className="flex items-center justify-center text-center w-full md:w-[800px] mx-auto lg:text-base text-[9px] ">
   {description}
 </p>
 
 
 
         {/* Subtitle + Description */}
-       <div className="flex justify-between items-start gap-10 flex-wrap md:flex-nowrap mt-25">
+       <div className="flex justify-between items-start lg:gap-10 flex-nowrap lg:mt-25 mt-6">
   {/* LEFT SIDE */}
   <div className="w-full md:w-1/2">
-    <h2 className="text-4xl mb-4 mt-10 ml-40">
+    <h2 className="lg:text-4xl text-[12px] lg:mb-4 lg:mt-10 lg:ml-40 ml-20">
       <span className="bg-[#BC0700] px-2 rounded">{subtitle}</span> {current.heading}
     </h2>
   </div>
 
   {/* RIGHT SIDE */}
   <div className="w-full md:w-1/2">
-    <h2 className="text-4xl mb-4 mt-10 text-right mr-40">
+    <h2 className="lg:text-4xl text-[12px] lg:mb-4 lg:mt-10 mt-0 text-right mr-50 lg:mr-40">
       <span className="bg-[#FBC408] px-2 rounded">{subtitles}</span> {current.heading}
     </h2>
     <p className="w-[500px] ml-auto text-sm px-4 py-2 rounded">
@@ -53,36 +53,37 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
           {/* Left Arrow */}
           <button
             onClick={prev}
-            className="absolute left-4 md:left-10 z-20 text-[#0E2A8B] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
+            className="lg:absolute lg:left-4 md:left-10 z-20 text-[#0E2A8B] lg:p-2 p-3 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
           >
-            <ChevronLeft size={28} />
+           <ChevronLeft className="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
+
           </button>
 
           {/* Background GIF */}
           <img
             src="/mondrian.gif"
             alt="Background gif"
-            className="absolute top-24 left-0 w-full h-[228px] object-cover z-0 opacity-20 "
+            className="absolute top-24 left-0 w-full h-[228px] object-cover z-0 opacity-20 lg:block hidden"
           />
 
           {/* Foreground Image */}
-          <div className="relative z-10 flex ml-30 mt-30 ">
+          <div className="relative z-10 flex lg:ml-30 mt-10 lg:mt-30 ">
   <img
     src={current.image}
     alt="Example visual"
-    className={`object-contain rounded-xl  ${
-      current.id === "google" ? "w-[370px] h-[400px]  " : "w-[420px] h-[460px] mt-14"
+    className={`object-contain lg:rounded-xl  ${
+      current.id === "google" ? "lg:w-[370px] w-[240px] h-[200px] lg:h-[400px]  " : "lg:w-[420px] w-[370px] h-[370px] lg:h-[460px] lg:mt-14 mt-20"
     }`}
   />
 </div>
 
-<div className="relative z-10 flex mr-20  mt-30 ">
+<div className="relative z-10 flex lg:mr-20 mt-35 lg:mt-30 ">
   
   <img
     src={current.images}
     alt="Example visual"
-    className={`object-contain rounded-xl ${
-      current.id === "google" ? "w-[320px] h-[400px] ml-14 mb-40 " : "w-[400px] h-[400px] mt-2"
+    className={`object-contain lg:rounded-xl ${
+      current.id === "google" ? "lg:w-[320px] w-[240px] h-[200px] lg:h-[400px] lg:ml-14 lg:mb-40 ml-2 mb-34" : "lg:w-[400px] w-[320px] h-[320px] lg:h-[400px] lg:mt-2 lg:mb-3 mb-15 ml-2"
     }`}
   />
 </div>
@@ -91,9 +92,9 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
           {/* Right Arrow */}
           <button
             onClick={next}
-            className="absolute right-4 md:right-10 z-20  text-[#0E2A8B] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
+            className="lg:absolute lg:right-4 md:right-10 z-20  text-[#0E2A8B] lg:p-2 p-3 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
           >
-            <ChevronRight size={28} />
+            <ChevronRight className="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
           </button>
         </div>
       </div>
