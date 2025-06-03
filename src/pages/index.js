@@ -8,7 +8,7 @@ export default function Home() {
         <title>Darine Tag</title>
         <meta name="description" content="My creative portfolio" />
       </Head>
-<section className="lg:relative h-screen">
+<section className="lg:relative lg:h-screen min-h-[90vh]">
         
 <img src="/darinemotion.gif" alt="My Image" className="lg:w-150 lg:h-140 lg:left-230 lg:top-10 top-16 left-4  w-50 h-50 rounded-lg absolute z-10" />
         <h1 style={{ fontFamily: 'Science' }} className="font-science lg:text-8xl text-2xl text-[#0E2A8B] absolute lg:top-55 top-58 left-56 lg:left-4">Darine Tag</h1>
