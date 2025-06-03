@@ -26,25 +26,25 @@ export default function ProjectExample() {
 
   return (
     <Layout>
-      <div className="min-h-screen flex flex-col px-6" style={{ fontFamily: "Montreal" }}>
+      <div className="lg:min-h-screen flex flex-col px-6" style={{ fontFamily: "Montreal" }}>
         {/* Title */}
-        <h1 className="text-6xl text-[#BC0700] text-center my-4" style={{ fontFamily: "Science" }}>
+        <h1 className="lg:text-6xl text-2xl text-[#BC0700] text-center my-4" style={{ fontFamily: "Science" }}>
           Landing pages
         </h1>
 
         {/* Description */}
-        <p className="text-center w-full md:w-[800px] mx-auto">
+        <p className="text-center w-full md:w-[800px] mx-auto lg:text-lg text-[12px]">
           {description}
         </p>
 
         {/* Image Carousel */}
-        <div className="relative flex-grow flex items-center justify-center py-16">
+        <div className="relative flex-grow flex items-center justify-center lg:py-16 py-4">
           {/* Left Arrow */}
           <button
             onClick={prev}
-            className="absolute left-4 md:left-10 z-20 text-[#FBC408] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
+            className="absolute lg:left-4 left-0 md:left-10 z-20 text-[#FBC408] lg:p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
           >
-            <ChevronLeft size={48} />
+            <ChevronLeft className="w-8 h-8 lg:w-14 lg:h-14"  />
           </button>
 
           {/* Image */}
@@ -57,13 +57,13 @@ export default function ProjectExample() {
     muted
     playsInline
 
-    className="w-[900px] h-[2000px] max-h-[160vh] w-auto rounded-2xl object-contain"
+    className="w-[900px] lg:h-[2000px] h-[600px] max-h-[160vh] w-auto rounded-2xl object-contain"
   />
 ) : (
   <Image
     src={current.src}
     alt={current.id}
-    className="w-[900px] h-[2000px] max-h-[160vh] w-auto rounded-2xl object-contain"
+    className="lg:w-[900px] lg:h-[2000px] h-[700px] max-h-[160vh] w-auto rounded-2xl object-contain"
      width={400}
   height={300}
   />
@@ -75,9 +75,9 @@ export default function ProjectExample() {
           {/* Right Arrow */}
           <button
             onClick={next}
-            className="absolute right-4 md:right-10 z-20 text-[#FBC408] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
+            className="absolute lg:right-4 right-0 md:right-10 z-20 text-[#FBC408] lg:p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
           >
-            <ChevronRight size={48} />
+            <ChevronRight className="w-8 h-8 lg:w-14 lg:h-14" />
           </button>
         </div>
       </div>
