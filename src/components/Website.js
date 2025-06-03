@@ -17,13 +17,13 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
   };
   return (
     <Layout>
-        <div className="min-h-[100vh] flex flex-col px-6 relative overflow-visible " style={{ fontFamily: "Montreal" }}>
+        <div className="lg:min-h-[100vh] flex flex-col px-6 relative overflow-visible " style={{ fontFamily: "Montreal" }}>
         {/* Page Title */}
-        <h1 className="text-6xl text-[#FBC408] text-center my-4" style={{ fontFamily: "Science" }}>
+        <h1 className="lg:text-6xl text-2xl text-[#FBC408] text-center my-4" style={{ fontFamily: "Science" }}>
           {title}
         </h1>
         
-     <p className="flex items-center justify-center text-center w-full md:w-[800px] mx-auto ">
+     <p className="flex items-center justify-center text-center lg:w-full mx-auto text-[6px] lg:text-lg">
   {description}
 </p>
 <div className="flex">
@@ -32,37 +32,37 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
       href="https://big-mama.io/en/"
       target="_blank"
       rel="noopener noreferrer"
-      className="ml-20"
+      className="lg:ml-20"
     >
       <img
         src={current.images}
         alt="sticky note"
-        className="w-[250px] h-[220px] cursor-pointer"
+        className="lg:w-[250px] lg:h-[220px] w-[50px] h-[50px] lg:mr-20 cursor-pointer"
       />
     </a>
   ) : (
     <img
       src={current.images}
       alt="sticky note"
-      className="w-[250px] h-[220px] ml-20"
+      className="lg:w-[250px] lg:h-[220px] w-[50px] h-[50px] lg:ml-20 "
     />
   )}
   
   <img
     src={current.imagess}
     alt="sticky note"
-    className="w-[150px] h-[140px] items-end ml-200 mt-20"
+    className="lg:w-[150px] lg:h-[140px] w-[50px] h-[50px] items-end lg:ml-200 ml-58 lg:mt-20 ml-0"
   />
 </div>
 
-<div className="relative w-full h-[1px] mt-70 flex items-center justify-center flex-grow pb-100">
+<div className="relative w-full h-[1px] lg:mt-70 mt-54 flex items-center justify-center flex-grow lg:pb-100 pb-70 ">
     
           {/* Left Arrow */}
           <button
             onClick={prev}
-            className="absolute left-4 md:left-10 z-20 text-[#FBC408] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
+            className="absolute lg:left-10 left-0 z-20 text-[#FBC408] lg:p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
           >
-            <ChevronLeft size={48} />
+            <ChevronLeft className="w-8 h-8 lg:w-14 lg:h-14"  />
           </button>
     
           <div className="flex items-center justify-center ">
@@ -71,16 +71,16 @@ export default function ProjectExample({ title, subtitle, examples, subtitles, d
     src={current.image}
     alt="Example visual"
     className={`object-contain   ${
-      current.id === "about us" ? " w-[800px] h-[1600px] mt-180 " : " w-[880px] h-[800px]"
+      current.id === "about us" ? " lg:w-[800px] w-[200px]  lg:h-[1600px] lg:mt-180 mt-20 " : " lg:w-[880px] w-[270px] lg:h-[800px] h-[400px]"
     }`}
   />
 </div>
 {/* Right Arrow */}
           <button
             onClick={next}
-            className="absolute right-4 md:right-10 z-20  text-[#FBC408] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
+            className="absolute right-0 lg:right-10 z-20 text-[#FBC408] lg:p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#0E2A8B]"
           >
-            <ChevronRight size={48}/>
+            <ChevronRight className="w-8 h-8 lg:w-14 lg:h-14" />
           </button>
         </div>
       </div>
