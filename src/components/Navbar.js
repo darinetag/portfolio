@@ -5,36 +5,27 @@ import { Linkedin, Instagram, Github, Mail } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <nav
-      style={{
-        padding: '1.2rem 2rem',
-        background: '#fff',
-        fontFamily: 'Montreal',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}
-    >
+    <nav className="w-full px-2 py-2 lg:px-4 lg:py-4 bg-white font-sans flex lg:justify-between gap-28 items-center"  style={{ fontFamily: 'Montreal' }}>
       {/* Left: Navigation links */}
-      <ul style={{ display: 'flex', gap: '2rem', listStyle: 'none', fontSize: '1.2rem', margin: 0, padding: 0 }}>
+      <ul className=" flex gap-3 text-sm lg:gap-6 lg:text-lg">
         <li><Link href="/">Home</Link></li>
         <li><Link href="/projects">Projects</Link></li>
         <li><Link href="/art">Art</Link></li>
       </ul>
 
       {/* Right: Social Icons */}
-      <div style={{ display: 'flex', gap: '1rem' }}>
-        <a href="https://www.linkedin.com/in/darine-tag/" style={{ color: '#0E2A8B' }} target="_blank" rel="noopener noreferrer">
-          <Linkedin size={20} />
+      <div className="flex lg:gap-4 gap-2 ">
+        <a href="https://www.linkedin.com/in/darine-tag/" className="text-[#0E2A8B]" target="_blank" rel="noopener noreferrer">
+          <Linkedin className="w-4 h-4 lg:w-6 lg:h-6 md:w-5 md:h-5" />
         </a>
-        <a href="https://www.instagram.com/darcone_/" style={{ color: '#FBC408' }} target="_blank" rel="noopener noreferrer">
-          <Instagram size={20} />
+        <a href="https://www.instagram.com/darcone_/" className="text-[#FBC408]" target="_blank" rel="noopener noreferrer">
+          <Instagram className="w-4 h-4 lg:w-6 lg:h-6 md:w-5 md:h-5" />
         </a>
-        <a href="https://github.com/darinetag" target="_blank"  rel="noopener noreferrer">
-          <Github size={20} />
+        <a href="https://github.com/darinetag" target="_blank" rel="noopener noreferrer">
+          <Github className="w-4 h-4 lg:w-6 lg:h-6 md:w-5 md:h-5" />
         </a>
-        <a href="mailto:tagdarinefatma@gmail.com" style={{ color: '#BC0700' }}>
-          <Mail size={20} />
+        <a href="mailto:tagdarinefatma@gmail.com" className="text-[#BC0700]">
+          <Mail className="w-4 h-4 lg:w-6 lg:h-6 md:w-5 md:h-5" />
         </a>
       </div>
     </nav>
