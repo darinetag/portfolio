@@ -19,7 +19,7 @@ export default function ProjectExample({ title, subtitle, examples }) {
 
   return (
     <Layout>
-      <div className="min-h-screen px-6 relative overflow-hidden" style={{ fontFamily: "Montreal" }}>
+      <div className="lg:min-h-screen min-h-[70vh] px-6 relative overflow-hidden" style={{ fontFamily: "Montreal" }}>
         {/* Page Title */}
         <h1 className="lg:text-6xl text-3xl my-8 text-[#FBC408] text-center lg:my-4" style={{ fontFamily: "Science" }}>
           {title}
