@@ -21,30 +21,30 @@ export default function ProjectExample({ title, subtitle, examples }) {
     <Layout>
       <div className="min-h-screen px-6 relative overflow-hidden" style={{ fontFamily: "Montreal" }}>
         {/* Page Title */}
-        <h1 className="text-6xl text-[#FBC408] text-center my-4" style={{ fontFamily: "Science" }}>
+        <h1 className="lg:text-6xl text-3xl my-8 text-[#FBC408] text-center lg:my-4" style={{ fontFamily: "Science" }}>
           {title}
         </h1>
 
         {/* Subtitle + Description */}
-        <div className="flex justify-between items-start gap-10 flex-wrap md:flex-nowrap my-14">
+        <div className="flex justify-between items-start lg:gap-10 gap-4 flex-wrap md:flex-nowrap lg:my-14">
           <div className="w-full md:w-1/2">
-            <h2 className="text-4xl mb-4 mt-10">
-              <span className="bg-[#BC0700] px-2 rounded">{subtitle}</span> {current.heading}
+            <h2 className="lg:text-4xl text-xl lg:mb-4 lg:mt-10 mt-2">
+              <span className="bg-[#BC0700] lg:px-2 rounded">{subtitle}</span> {current.heading}
             </h2>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="w-[500px] ml-auto text-sm  px-4 py-2 rounded ">
+            <p className="lg:w-[500px] ml-auto text-sm  lg:px-4 lg:py-2 rounded ">
               {current.description}
             </p>
           </div>
         </div>
 
          {/* Image Container with Side Arrows */}
-        <div className="relative w-full h-[300px] mt-14 flex items-center justify-center">
+        <div className="relative w-full lg:h-[300px] lg:mt-14  flex items-center justify-center">
           {/* Left Arrow */}
           <button
             onClick={prev}
-            className="absolute left-4 md:left-10 z-20 text-[#0E2A8B] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
+            className="absolute lg:left-4 left-0 md:left-10 z-20 lg:text-[#0E2A8B] text-[#FBC408] lg:p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
           >
             <ChevronLeft size={28} />
           </button>
@@ -53,21 +53,21 @@ export default function ProjectExample({ title, subtitle, examples }) {
           <Image
             src="/mondrian.gif"
             alt="Background gif"
-            className="absolute top-48 left-0 w-full h-[228px] object-cover z-0 opacity-20 "
+            className="absolute top-48 left-0 w-full h-[228px] object-cover z-0 opacity-20 lg:block hidden"
             width={400}
   height={300}
           />
 
           {/* Foreground Image */}
-          <div className="relative z-10 flex justify-center items-center h-full mt-30 ">
-            <Image src={current.image} alt="Example visual" className="w-[784px]  object-contain rounded-xl "  width={400}
+          <div className="relative z-10 flex justify-center items-center h-full lg:mt-30 mt-8 ">
+            <Image src={current.image} alt="Example visual" className="lg:w-[784px] w-[260px] object-contain rounded-xl "  width={400}
   height={300} unoptimized />
           </div>
 
           {/* Right Arrow */}
           <button
             onClick={next}
-            className="absolute right-4 md:right-10 z-20  text-[#0E2A8B] p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
+            className="absolute lg:right-4 right-0 md:right-10 z-20  lg:text-[#0E2A8B] text-[#FBC408] lg:p-2 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
           >
             <ChevronRight size={28} />
           </button>

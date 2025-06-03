@@ -7,7 +7,7 @@ const projects = [
   { title: "Website", href: "/projects/website", color: "bg-[#BC0700]", style: "row-start-1 col-start-5 " },
   { title: "UX Writing",  href: "/projects/ux-writing", color: "bg-[#BC0700]", style: "row-start-2 col-start-2 translate-y-[-100px]" },
   { title: "Landing Pages", href: "/projects/landing-pages", color: "bg-[#FBC408]", style: "row-start-2 col-start-4  translate-y-[-100px] m-2" },
-  { title: "Blogs", href: "/projects/blogs", color: "bg-[#0E2A8B]", style: "row-start-3 col-start-3 translate-y-[-160px]" },
+  { title: "Blogs", href: "/projects/blogs", color: "bg-[#0E2A8B]", style: "row-start-3 col-start-3 translate-y-[-160px] m-2" },
 ];
 
 const ProjectsPage = () => {
@@ -41,7 +41,7 @@ const ProjectsPage = () => {
       <p style={{ fontFamily: 'Montreal' }} className="text-center mt-2 lg:text-lg text-sm">the experience I have so far</p>
 
       <div className="lg:min-h-screen  font-Montreal grid lg:mx-auto ">
-<div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4  lg:gap-6 lg:max-w-7xl w-full mx-auto lg:px-4 px-2">
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  lg:gap-6 lg:max-w-7xl w-full mx-auto lg:px-4 px-2">
     {projects.map((project, index) => (
       <Link key={index} href={project.href} passHref legacyBehavior>
         <a className="contents">

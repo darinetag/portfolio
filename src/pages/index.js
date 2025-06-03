@@ -23,7 +23,7 @@ export default function Home() {
             <section>
               <h1 style={{ fontFamily: 'Science' }} className="font-science lg:text-8xl text-4xl text-[#0E2A8B] flex items-center justify-center ">Skills</h1> </section>
   <section className="p-2 bg-black lg:mt-20 mt-10 ">
-  <div className="grid grid-cols-12 gap-2 text-[10px] lg:font-normal font-bold lg:text-xl text-center " style={{ fontFamily: 'Montreal' }}>
+  <div className="grid grid-cols-12 gap-2 text-[10px] lg:font-normal  lg:text-xl text-center " style={{ fontFamily: 'Montreal' }}>
     {/* First row */}
 <div className="col-span-3 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Web Design</div>
     <div className="col-span-6 h-14 bg-black text-white p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">HTML CSS Javascript GitHub Git</div>
