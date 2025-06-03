@@ -5,7 +5,7 @@ import { Linkedin, Instagram, Github, Mail } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <nav className="w-full px-2 py-2 lg:px-4 lg:py-4 bg-white font-sans flex lg:justify-between gap-28 items-center"  style={{ fontFamily: 'Montreal' }}>
+    <nav className="w-full px-2 py-2 lg:px-4 lg:py-4 bg-white font-sans flex lg:justify-between gap-35 items-center"  style={{ fontFamily: 'Montreal' }}>
       {/* Left: Navigation links */}
       <ul className=" flex gap-3 text-sm lg:gap-6 lg:text-lg">
         <li><Link href="/">Home</Link></li>
