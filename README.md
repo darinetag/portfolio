@@ -1,40 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 💻 Darine Tag – Portfolio
 
-## Getting Started
+Welcome to my personal portfolio! I'm Darine Tag — a multi-disciplinary **Product Designer**, **UI/UX Specialist**, **Frontend Developer**, and **Video Editor** with a passion for crafting intuitive, beautiful, and meaningful digital experiences.
 
-First, run the development server:
+This portfolio was **designed and coded from scratch** to reflect my personality, showcase my work, and demonstrate both my design thinking and development skills.
+
+---
+
+## 🌟 Live Website
+
+➡️ [darinetag.dev](https://www.darinetag.dev)
+
+---
+
+## 🧠 About Me
+
+I bring together design, code, and storytelling:
+
+- 🎨 **Product & UI/UX Design** – thoughtful interfaces rooted in usability, accessibility, and clean visual systems.
+- 💻 **Frontend Development** – pixel-perfect implementations with HTML, CSS, and JavaScript.
+- 🎬 **Video Editing & Motion** – visual storytelling that enhances user engagement.
+- 🌍 **Multilingual Communication** – as a professional translator, I ensure content speaks clearly to users.
+
+Over the past year, I've worked at an AI startup where I did the entire design pipeline: branding, UI UX, video-editing, social content, and frontend code.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Design**: Figma, Sketchbook autodesk, Canva
+- **Frontend**: HTML5, CSS, JavaScript, TailwindCSS, Next.js, React, Astro
+- **Version Control**: Git, GitHub
+
+---
+
+## 🚀 Features
+
+- Responsive, fast, and lightweight
+- Fully custom-coded without any templates
+- Modular and scalable structure
+- Interactive transitions and hover effects
+- Accessible design
+
+## 📌 To Run Locally
 
 ```bash
+# Clone this repo
+git clone https://github.com/darinetag/portfolio.git
+
+# Navigate into the directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
