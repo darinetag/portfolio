@@ -38,7 +38,7 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <h1 style={{ fontFamily: 'Science' }} className="font-science lg:text-8xl text-4xl text-[#0E2A8B] flex items-center justify-center mt-10">PROJECTS</h1>
-      <p style={{ fontFamily: 'Montreal' }} className="text-center mt-2 lg:text-lg text-sm">the experience I have so far</p>
+      <p style={{ fontFamily: 'Montreal' }} className="text-center mt-2 lg:text-lg text-sm">Highlights from my journey of creating solutions</p>
 
       <div className="lg:min-h-screen  font-Montreal grid lg:mx-auto ">
 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  lg:gap-6 lg:max-w-7xl w-full mx-auto lg:px-4 px-2">
