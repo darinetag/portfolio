@@ -27,38 +27,39 @@ export default function Home() {
     {/* First row */}
 <div className="col-span-3 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Web Design</div>
     <div className="col-span-6 h-14 bg-black text-white p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">HTML CSS Javascript GitHub Git</div>
-    <div className="col-span-3 h-14 bg-yellow-400 text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Next.js</div>
+    <div className="col-span-3 h-14 bg-yellow-400 text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">AI Automation Tools</div>
 
     {/* Second row */}
-    <div className="col-span-1 h-42 bg-red-700 p-2 hover:bg-white transition duration-300 ease-in-out hidden lg:block " ></div>
+    <div className="col-span-1 h-42 bg-red-700 pt-14 hover:bg-white transition duration-300 ease-in-out hidden lg:block " > Next.js React.js</div>
     <div className="col-span-2 h-42 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Visual Design</div>
     <div className="col-span-3 h-42 bg-[#0E2A8B] text-white p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">Figma</div>
     <div className="col-span-3 h-42 bg-red-700 text-black p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">Translation</div>
-    <div className="col-span-3 h-42 bg-white text-black lg:p-2 p-14 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">WordPress</div>
+    <div className="col-span-3 h-42 bg-white text-black lg:p-2 p-14 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">GTM Thinking</div>
 
     {/* Third row */}
-    <div className="col-span-2 hover:bg-white transition duration-300 ease-in-out hidden lg:block"></div>
+    <div className="col-span-2  hover:bg-white hover:text-black pt-3 text-white transition duration-300 ease-in-out hidden lg:block">Creative Video Editing</div>
     <div className="col-span-2 h-14 bg-yellow-400 text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">UX Writing</div>
-    <div className="col-span-3 h-14 bg-red-700 text-black p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">Proofreading</div>
+    <div className="col-span-3 h-14 bg-red-700 text-black p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">Copywriting & Proofreading</div>
     <div className="col-span-3 h-14 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Framer</div>
 
     {/* Fourth row */}
     <div className="col-span-2 h-14 bg-[#0E2A8B] text-white p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out ">Typography</div>
     <div className="col-span-2 h-14 bg-red-700 text-black p-2 flex items-center justify-center hover:bg-white hover:text-black transition duration-300 ease-in-out">Color Theory</div>
     <div className="col-span-2 lg:h-14 h-20 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Layout</div>
-    <div className="col-span-1 h-14 bg-[#0E2A8B] p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out hidden lg:block"></div>
+    <div className="col-span-1 h-14 bg-yellow-400 pt-2 pl-4 text-center flex items-center justify-center hover:bg-white transition duration-300 ease-in-out hidden lg:block"><img src="/capcuttt.png" alt="capcut logo"/>
+    </div>
     <div className="col-span-3 lg:h-14 h-20 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">User Research</div>
     <div className="col-span-2 h-14 bg-yellow-400 p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out hidden lg:block"> 
       <img src="/figma-icon.png" alt="Figma" className="w-6 h-8 mx-auto flex items-center justify-center" />
     </div>
-    <div className="col-span-2 hover:bg-white transition duration-300 ease-in-out hidden lg:block"></div>
+    <div className="col-span-2 hover:bg-white text-white hover:text-black pt-3 transition duration-300 ease-in-out hidden lg:block">Content Creation</div>
 
     {/* Fifth row */}
     <div className="col-span-3 h-20 bg-yellow-400 text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">UI/UX Principles</div>
-    <div className="col-span-1 h-20 bg-yellow-400 p-2 hover:bg-white transition duration-300 ease-in-out hidden lg:block">
+    <div className="col-span-1 h-20 bg-[#0E2A8B] p-2 hover:bg-white transition duration-300 ease-in-out hidden lg:block">
       <img src="/git-icon.png" alt="Git" className="w-8 h-8 mx-auto flex items-center justify-center mt-4 hidden lg:block" />
     </div>
-    <div className="col-span-2 h-20 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">AI</div>
+    <div className="col-span-2 h-20 bg-white text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">AI Prompt Engineering</div>
     <div className="col-span-1 h-20 bg-red-700 p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out hidden lg:block">
       <img src="/github-icon.png" alt="GitHub" className="w-6 h-6 mx-auto mt-5 " />
     </div>
