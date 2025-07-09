@@ -48,7 +48,7 @@ const ProjectsPage = () => {
       <Link key={index} href={project.href} passHref legacyBehavior>
         <a className="contents">
           <motion.div
-            className={`lg:w-40 lg:h-54 w-16 h-20 mt-20 lg:mt-0 ${project.color} text-[#333232] flex items-center justify-center rounded-md shadow-md lg:border-4 border-2 border-black cursor-pointer ${project.style}`}
+            className={`lg:w-40 lg:h-54 w-16 h-20 mt-20 lg:mt-0 ${project.color} text-[#fff] text-shadow-md flex items-center justify-center rounded-md shadow-md lg:border-4 border-2 border-black cursor-pointer ${project.style}`}
             animate={{
               y: offset,
               transition: { duration: 0.2 },
