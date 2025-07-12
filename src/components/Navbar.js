@@ -11,6 +11,7 @@ const Navbar = () => {
         <li><Link href="/">Home</Link></li>
         <li><Link href="/projects">Projects</Link></li>
         <li><Link href="/art">Art</Link></li>
+        <li><Link href="/playground">Playground</Link></li>
       </ul>
 
       {/* Right: Social Icons */}
