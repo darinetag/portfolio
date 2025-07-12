@@ -1,100 +1,141 @@
-
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { ChevronRight, ChevronLeft } from "lucide-react"; 
+import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
-export default function ProjectExample({ title, subtitle, examples, subtitles, description }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const current = examples[currentIndex];
+export default function UxWriting({ title, description, examples }) {
+  const [current, setCurrent] = useState(0);
+  const slide = examples[current];
 
-  const next = () => {
-    setCurrentIndex((prev) => (prev + 1) % examples.length);
-  };
-
-  const prev = () => {
-    setCurrentIndex((prev) => (prev - 1 + examples.length) % examples.length);
-  };
+  const next = () => setCurrent((prev) => (prev + 1) % examples.length);
+  const prev = () => setCurrent((prev) => (prev - 1 + examples.length) % examples.length);
 
   return (
     <Layout>
-      <div className="lg:min-h-screen min-h-[70vh] px-6 relative overflow-hidden" style={{ fontFamily: "Montreal" }}>
-        {/* Page Title */}
-        <h1 className="lg:text-6xl text-2xl text-[#FBC408] text-center my-4" style={{ fontFamily: "Science" }}>
+      <div className="min-h-screen bg-white flex flex-col items-center py-16 px-2">
+        {/* Title */}
+        <h1 className="font-science text-center text-3xl md:text-6xl text-[#0E2A8B] mb-2" style={{ fontFamily: "Science" }}>
           {title}
         </h1>
-     <p className="flex items-center justify-center text-center w-full md:w-[800px] mx-auto lg:text-base text-[9px] ">
-  {description}
-</p>
+        {/* Description */}
+        <p
+          className="text-center max-w-2xl mx-auto text-[12px] md:text-[16px] text-black mb-10 font-normal"
+          style={{ fontFamily: "Montreal" }}
+        >
+          {description}
+        </p>
 
-
-
-        {/* Subtitle + Description */}
-       <div className="flex justify-between items-start lg:gap-10 flex-nowrap lg:mt-25 mt-6">
-  {/* LEFT SIDE */}
-  <div className="w-full md:w-1/2">
-    <h2 className="lg:text-4xl text-[12px] lg:mb-4 lg:mt-10 lg:ml-40 ml-20">
-      <span className="bg-[#BC0700] px-2 rounded">{subtitle}</span> {current.heading}
-    </h2>
-  </div>
-
-  {/* RIGHT SIDE */}
-  <div className="w-full md:w-1/2">
-    <h2 className="lg:text-4xl text-[12px] lg:mb-4 lg:mt-10 mt-0 text-right mr-50 lg:mr-40">
-      <span className="bg-[#FBC408] px-2 rounded">{subtitles}</span> {current.heading}
-    </h2>
-    <p className="w-[500px] ml-auto text-sm px-4 py-2 rounded">
-      {current.description}
-    </p>
-  </div>
-</div>
-
-         {/* Image Container with Side Arrows */}
-        <div className="relative w-full h-[1px] mt-14 flex items-center justify-center">
+        {/* --- NAVIGATION BUTTONS (desktop only) --- */}
+        <div className="relative w-full max-w-4xl flex items-center justify-center mb-16">
           {/* Left Arrow */}
           <button
             onClick={prev}
-            className="lg:absolute lg:left-4 md:left-10 z-20 text-[#0E2A8B] lg:p-2 p-3 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
+            aria-label="Previous"
+            className="
+              hidden md:flex items-center justify-center
+              absolute z-30
+              left-[-90px] xl:left-[-140px] 2xl:left-[-180px]
+              top-1/2 -translate-y-1/2
+              bg-[#0E2A8B] text-white hover:bg-[#FBC408] hover:text-[#0E2A8B]
+              rounded-full w-16 h-16 shadow-lg transition-all
+            "
+            style={{ outline: "none" }}
           >
-           <ChevronLeft className="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
-
+            <ChevronLeft size={38} />
           </button>
 
-          {/* Background GIF */}
-          <img
-            src="/mondrian.gif"
-            alt="Background gif"
-            className="absolute top-24 left-0 w-full h-[228px] object-cover z-0 opacity-20 lg:block hidden"
-          />
+          {/* Horizontal Comparison Block */}
+          <div className="w-full flex flex-col md:flex-row items-stretch justify-center gap-8 relative">
+            {/* BEFORE */}
+            <div className="flex-1 flex flex-col items-center justify-center bg-white rounded-3xl shadow-2xl px-5 pt-16 pb-10 min-h-[370px] relative">
+              {/* Badge */}
+              <span className="absolute left-1/2 -translate-x-1/2 -top-7 bg-[#BC0700] text-white px-6 py-2 rounded-full font-bold text-base tracking-wide shadow-lg uppercase z-10">
+                Before
+              </span>
+              {slide.beforeImage && (
+                <Image
+                  src={slide.beforeImage}
+                  alt="Before"
+                  width={500}
+                  height={200}
+                  className="mb-6 w-full max-w-[350px] h-auto object-contain"
+                  unoptimized
+                />
+              )}
+              <p className="text-[#BC0700] text-center text-xl md:text-2xl lg:text-3xl font-bold leading-snug">
+                {slide.beforeText}
+              </p>
+            </div>
 
-          {/* Foreground Image */}
-          <div className="relative z-10 flex lg:ml-30 mt-10 lg:mt-30 ">
-  <img
-    src={current.image}
-    alt="Example visual"
-    className={`object-contain lg:rounded-xl  ${
-      current.id === "google" ? "lg:w-[370px] w-[240px] h-[200px] lg:h-[400px]  " : "lg:w-[420px] w-[370px] h-[370px] lg:h-[460px] lg:mt-14 mt-20"
-    }`}
-  />
-</div>
+            {/* ARROW */}
+            <div className="hidden md:flex flex-col items-center justify-center w-16 relative">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                <ArrowRight size={44} className="text-[#FBC408] animate-bounce" />
+                <span className="text-gray-400 mt-2 text-xs md:text-sm text-center whitespace-nowrap">How I improved it</span>
+              </div>
+            </div>
+            {/* On mobile: arrow below (between cards) */}
+            <div className="md:hidden flex flex-col items-center justify-center my-4">
+              <ArrowRight size={44} className="text-[#FBC408] animate-bounce" />
+              <span className="text-gray-400 mt-2 text-xs md:text-sm">How I improved it</span>
+            </div>
 
-<div className="relative z-10 flex lg:mr-20 mt-35 lg:mt-30 ">
-  
-  <img
-    src={current.images}
-    alt="Example visual"
-    className={`object-contain lg:rounded-xl ${
-      current.id === "google" ? "lg:w-[320px] w-[240px] h-[200px] lg:h-[400px] lg:ml-14 lg:mb-40 ml-2 mb-34" : "lg:w-[400px] w-[320px] h-[320px] lg:h-[400px] lg:mt-2 lg:mb-3 mb-15 ml-2"
-    }`}
-  />
-</div>
-
+            {/* AFTER */}
+            <div className="flex-1 flex flex-col items-center justify-center bg-white rounded-3xl shadow-2xl px-5 pt-16 pb-10 min-h-[370px] relative">
+              {/* Badge */}
+              <span className="absolute left-1/2 -translate-x-1/2 -top-7 bg-[#FBC408] text-black px-6 py-2 rounded-full font-bold text-base tracking-wide shadow-lg uppercase z-10">
+                After
+              </span>
+              {slide.afterImage && (
+                <Image
+                  src={slide.afterImage}
+                  alt="After"
+                  width={500}
+                  height={200}
+                  className="mb-6 w-full max-w-[350px] h-auto object-contain"
+                  unoptimized
+                />
+              )}
+              <p className="text-[#0E2A8B] text-center text-xl md:text-2xl lg:text-3xl font-bold leading-snug">
+                {slide.afterText}
+              </p>
+            </div>
+          </div>
 
           {/* Right Arrow */}
           <button
             onClick={next}
-            className="lg:absolute lg:right-4 md:right-10 z-20  text-[#0E2A8B] lg:p-2 p-3 rounded-full hover:scale-105 transition cursor-pointer hover:text-[#FBC408]"
+            aria-label="Next"
+            className="
+              hidden md:flex items-center justify-center
+              absolute z-30
+              right-[-90px] xl:right-[-140px] 2xl:right-[-180px]
+              top-1/2 -translate-y-1/2
+              bg-[#0E2A8B] text-white hover:bg-[#FBC408] hover:text-[#0E2A8B]
+              rounded-full w-16 h-16 shadow-lg transition-all
+            "
+            style={{ outline: "none" }}
           >
-            <ChevronRight className="w-4 h-4 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12" />
+            <ChevronRight size={38} />
+          </button>
+        </div>
+
+        {/* --- NAVIGATION (MOBILE) --- */}
+        <div className="flex md:hidden items-center gap-10 mt-2">
+          <button
+            onClick={prev}
+            aria-label="Previous"
+            className="bg-[#0E2A8B] text-white hover:bg-[#FBC408] hover:text-[#0E2A8B] rounded-full w-14 h-14 flex items-center justify-center shadow-lg text-2xl transition"
+          >
+            <ChevronLeft size={32} />
+          </button>
+          <span className="text-xl font-bold text-[#0E2A8B]">{current + 1} / {examples.length}</span>
+          <button
+            onClick={next}
+            aria-label="Next"
+            className="bg-[#0E2A8B] text-white hover:bg-[#FBC408] hover:text-[#0E2A8B] rounded-full w-14 h-14 flex items-center justify-center shadow-lg text-2xl transition"
+          >
+            <ChevronRight size={32} />
           </button>
         </div>
       </div>
