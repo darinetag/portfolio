@@ -7,9 +7,9 @@ const projects = [
   { title: "Website", href: "/projects/website", color: "bg-[#BC0700]", style: "row-start-1 col-start-5 " },
   { title: "UX Writing",  href: "/projects/ux-writing", color: "bg-[#BC0700]", style: "row-start-2 col-start-2 translate-y-[-100px]" },
   { title: "Landing Pages", href: "/projects/landing-pages", color: "bg-[#FBC408]", style: "row-start-2 col-start-4  translate-y-[-100px] m-2" },
-  { title: "Blogs", href: "/projects/blogs", color: "bg-[#0E2A8B]", style: "row-start-3 col-start-3 translate-y-[-160px] m-2" },
-   { title: "Visual Storytelling", href: "/projects/visual", color: "bg-[#0E2A8B]", style: "row-start-3 col-start-2 translate-x-[-180px]" },
-   { title: "Video Editing", href: "/projects/video", color: "bg-[#FBC408]", style: "row-start-3 col-start-4 translate-x-[180px]" },
+  { title: "Blogs", href: "/projects/blogs", color: "bg-[#0E2A8B]", style: "row-start-3 col-start-3 lg:translate-y-[-160px] translate-y-[-180px] m-2" },
+   { title: "Visual Storytelling", href: "/projects/visual", color: "bg-[#0E2A8B]", style: "row-start-3 col-start-2 lg:translate-x-[-180px] translate-y-[-100px] lg:translate-y-[20px]" },
+   { title: "Video Editing", href: "/projects/video", color: "bg-[#FBC408]", style: "row-start-3 col-start-4 lg:translate-x-[180px] translate-y-[-100px] lg:translate-y-[20px] " },
 ];
 
 const ProjectsPage = () => {
