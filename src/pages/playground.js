@@ -110,7 +110,7 @@ export default function PlaygroundPage() {
         >
           Piet Mondrian Playground
         </h1>
-        <p className="mb-6 text-lg text-gray-700 text-center max-w-xl">
+        <p className="mb-6 lg:text-lg text-gray-700 text-center max-w-xl">
           Click anywhere on the canvas to create your own Mondrian painting!
         </p>
         {/* Frame and Canvas */}

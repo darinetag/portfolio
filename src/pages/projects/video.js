@@ -13,7 +13,7 @@ export default function VideoPage() {
         >
           🎬 Video and Filmmaking
         </h1>
-        <p className="text-lg md:text-xl text-gray-800 text-center max-w-xl mb-6">
+        <p className="lg:text-lg md:text-xl text-gray-800 text-center max-w-xl mb-6">
           Curious about my latest video work, reels, and behind-the-scenes? <br />
           <span className="text-[#FBC408] font-semibold">Let’s connect on Instagram!</span>
         </p>
