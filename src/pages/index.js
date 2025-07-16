@@ -60,14 +60,14 @@ export default function Home() {
     <div className="col-span-2 h-20 bg-red-700 pt-6 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out hidden lg:block"> 
      
     </div>
-        <div className="lg:col-span-4 h-20  bg-yellow-400 text-black lg:p-2 p-7 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Mockups and Prototyping</div>
-    <div className="lg:col-span-2 h-20 bg-yellow-400  text-black lg:p-2 p-7 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Color Theory</div>
-        <div className="col-span-2 lg:h-14 h-20 bg-white  text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out"></div>
+        <div className="lg:col-span-4 col-span-5 h-20  bg-yellow-400 text-black lg:p-2 p-7 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Mockups and Prototyping</div>
+    <div className="col-span-2 lg:h-20 h-14 bg-yellow-400  text-black lg:p-2 p-7 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Color Theory</div>
+        <div className="col-span-2  h-14 bg-white  text-black p-2 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out"></div>
 
-    <div className="lg:col-span-3 h-14  bg-yellow-400 text-black lg:p-2 p-7 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">User Research</div>
-  <div className="lg:col-span-2 h-14  bg-black text-white hover:bg-white hover:text-black lg:p-2 p-7 flex items-center justify-center transition duration-300 ease-in-out"> Capcut</div>
-  <div className="lg:col-span-2 h-14  bg-white hover:text-black lg:p-2 p-7 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Layout</div>
-  <div className="lg:col-span-3 h-14  bg-red-700 hover:text-black lg:p-2 p-7 flex items-center justify-center hover:bg-white transition duration-300 ease-in-out"></div>
+    <div className="col-span-3 h-14  bg-yellow-400 text-black lg:p-2  flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">User Research</div>
+  <div className="col-span-2  h-14  bg-black text-white hover:bg-white hover:text-black lg:p-2  flex items-center justify-center transition duration-300 ease-in-out"> Capcut</div>
+  <div className="lg:col-span-2 col-span-3 h-14  bg-white hover:text-black lg:p-2  flex items-center justify-center hover:bg-white transition duration-300 ease-in-out">Layout</div>
+  <div className="col-span-3 h-14  bg-red-700 hover:text-black lg:p-2  flex items-center justify-center hover:bg-white transition duration-300 ease-in-out lg:block hidden"></div>
 
   </div>
 
