@@ -13,15 +13,7 @@ export default function ProjectExample({ title, subtitle, examples }) {
   return (
     <Layout>
       <div className="min-h-screen bg-[#faf8f5] flex flex-col items-center justify-center px-2 py-8 relative">
-        {/* Mondrian background, soft and non-intrusive */}
-        <Image
-          src="/mondrian.gif"
-          alt="Mondrian background"
-          fill
-          className="object-cover opacity-10 absolute inset-0 z-0"
-          style={{ pointerEvents: 'none' }}
-        />
-
+       
         {/* Section title */}
         <h1
           className="font-science lg:text-7xl text-3xl text-[#0E2A8B] mb-2 z-10"
